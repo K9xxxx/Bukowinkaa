@@ -839,9 +839,42 @@ footer{
         width:40px;
         height:40px;
         z-index: 19 ;
-        right:70px;
+        right:20px;
         top:20px;
         display:block;
+        transition:all 0.9s ease-in-out;
+        opacity:1;
+    }
+    .navigation-icon.sleeping{
+        visibility: hidden;
+        opacity:0;
+        transition:all 0.9s ease-in-out;
+    }
+    .mobile-navigation-relative.sleeping{
+        visibility: hidden;
+        opacity:0;
+        transition:all 0.9s ease-in-out;
+    }
+    .mobile-navigation-relative{
+        width:100vw;
+        height:100vh;
+        position:relative;
+        background:var(--main-white);
+    }
+    .mobile-navigation.sleeping{
+        width:100vw;
+        height:100vh;
+        position:fixed;
+        top:0;
+        right:0;
+        overflow: scroll;   
+        margin-right:0%; 
+        visibility:visible;
+        z-index:99;
+        display:block;
+        transform: translateX(100%);
+        opacity:0;
+        transition: all .3s ease-in-out;
     }
     .mobile-navigation{
         width:100vw;
@@ -849,15 +882,14 @@ footer{
         position:fixed;
         top:0;
         right:0;
-        background:var(--main-white);
         overflow: scroll;   
         margin-right:0%; 
+        z-index:99;
+        opacity:0;
+        transition: all .3s ease-in-out;
+        transform: translateX(0%);
+        opacity:1;
         display:block;
-    }
-    .mobile-navigation-relative{
-        width:100%;
-        height:100%;
-        position:relative;
     }
     .close-icon{
         position:absolute;
