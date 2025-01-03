@@ -503,7 +503,7 @@ footer{
 .footer-nav a{
     margin:0 32px;
     color:var(--full-white);
-    font-size:48px;
+    font-size:32px;
     transition:all .3s ease-in-out;
 }
 .footer-nav a:hover{
@@ -1330,11 +1330,41 @@ footer{
     .atrakcja {
         margin-bottom: 8px;
     }
+    header {
+        background-position:15% 50%;
+    }
 
 }
 @media only screen and (max-width:350px){
-
-}
-@media only screen and (max-width:300px){
+    .tittle-of-page h1 {
+        font-size: 48px;
+        margin-top: 24px;
+    }
+    .tittle-of-page-article article {
+        margin-top: 24px;
+        font-size: 16px;
+    }
+    .krotki-opis-bukowinki h2, .krotki-opis-o-nas .opis-o-nas h3,     .krotki-opis-domki div h4, .spedzanie-czasu h5, .mazury h6{
+        font-size: 36px;
+    }
+    .krotki-opis-domki div .opis-domki-domek {
+        width: 280px;
+        height: 190px;
+    }
+    .spedzanie-czasu {
+        border: 4px solid var(--main-green);
+        width: 95%;
+        margin: -100px auto 0px;
+        display: flex;
+    }
+    .mazury {
+        width: 100%;
+    }
+    .mazury-opis{
+        width:95%;
+    }
+    .footer-abs-bukowinka {
+        left: -40%;
+    }
 
 }
