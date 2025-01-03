@@ -861,6 +861,7 @@ footer{
         height:auto;
         position:relative;
         background:var(--main-white);
+        padding-bottom:40px;
     }
     .mobile-navigation.sleeping{
         width:100vw;
@@ -905,7 +906,7 @@ footer{
         display:flex;
         flex-direction:column;
         padding-top:60px;
-        padding-bottom:40px;
+        padding-bottom:0px;
     }
     .mob-navigation-anchors{
         display:flex;
