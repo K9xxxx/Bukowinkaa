@@ -861,7 +861,7 @@ footer{
         height:auto;
         position:relative;
         background:var(--main-white);
-        padding-bottom:140px;
+        padding-bottom:60px;
     }
     .mobile-navigation.sleeping{
         width:100vw;
