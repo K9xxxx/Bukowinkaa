@@ -20,6 +20,12 @@
     --sec-green:#1E5F54;
     --red:#F23535;
 }
+.full-content{
+    overflow: visible;
+}
+.full-content.sleeping{
+    overflow: visible;
+}
 body{
     background:var(--main-white);
 }
@@ -857,7 +863,6 @@ footer{
     }
     .mobile-navigation-relative{
         width:100vw;
-        height:100vh;
         position:relative;
         background:var(--main-white);
     }
