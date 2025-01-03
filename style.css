@@ -831,9 +831,6 @@ footer{
 }
 
 @media only screen and (max-width:850px){
-    nav{
-        border:1px solid red;
-    }
     .nav-relative{
         display:none;
     }
@@ -847,8 +844,8 @@ footer{
         display:block;
     }
     .mobile-navigation{
-        width:100%;
-        height:80px;
+        width:100vw;
+        height:100vh;
         position:fixed;
         top:0;
         right:0;
@@ -872,7 +869,7 @@ footer{
     .mob-navigation-content{
         display:flex;
         flex-direction:column;
-        padding-top:20px;
+        padding-top:60px;
         padding-bottom:40px;
     }
     .mob-navigation-anchors{
@@ -891,10 +888,10 @@ footer{
     .mob-navigation-anchors .mob-navigation-logo a{
         font-family: "Dancing Script", cursive;
         font-size:64px;
-        color:var(--main-green)
+        color:#000
     }
     .mob-navigation-anchors .mob-navigation-logo a + svg{
-        color:var(--main-green)
+        color:#000
     }
     .anchor-subweb{
         margin:16px auto 0px;
@@ -905,24 +902,6 @@ footer{
         text-align: center;
         color:var(--full-black);
         font-size:36px;
-    }
-    .anchor-subweb svg{
-        position:absolute;
-        left:-75px;
-        bottom:0;
-        color:var(--main-green);
-        width:50px;
-        height:50px;
-        z-index:-1;
-    }
-    .anchor-subweb .last-svg-logo{
-        position:absolute;
-        left:145px;
-        bottom:0;
-        color:var(--main-green);
-        width:50px;
-        height:50px;
-        z-index:-1;
     }
     .mob-navigation-anchors a:nth-child(1){
         margin-top:0px;
