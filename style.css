@@ -856,13 +856,9 @@ footer{
         opacity:0;
         transition:all 0.9s ease-in-out;
     }
-    .mobile-navigation-relative.sleeping{
-        visibility: hidden;
-        opacity:0;
-        transition:all 0.9s ease-in-out;
-    }
     .mobile-navigation-relative{
         width:100vw;
+        height:auto;
         position:relative;
         background:var(--main-white);
     }
@@ -884,7 +880,8 @@ footer{
     }
     .mobile-navigation{
         width:100vw;
-        height:100vh;
+        min-height:100vh;
+        height:100%;
         position:fixed;
         top:0;
         right:0;
