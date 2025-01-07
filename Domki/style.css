@@ -171,7 +171,7 @@ header{
     margin:24px auto 0px;
 }
 .tittle-of-page-article article{
-    margin-top:100px;
+    margin-top:50px;
     font-size:36px;
     font-family: "Barlow", sans-serif;
     font-style: italic;
@@ -179,6 +179,7 @@ header{
     color:var(--full-white);
     letter-spacing:1px;
     text-shadow:2px 2px 2px black;
+    padding-bottom:48px;
 }
 .tittle-of-page-button {
     margin-top:88px;
@@ -231,7 +232,7 @@ header{
 }
 .description article{
     text-align: center;
-    font-size:32px;
+    font-size:24px;
 }
 .i3-images{
     position:relative;
@@ -319,11 +320,25 @@ header{
 }
 .offer-1{
     background:#0F2F2A;
+    opacity:80%;
+    transform:scale(0.9);
+    transition:all .3s ease-in-out;
 }
 .offer-2{
     background:#0F2F2A;
     opacity:80%;
     transform: scale(0.9);
+    transition:all .3s ease-in-out;
+}
+.offer-1.active{
+    transform:scale(1);
+    background:#0F2F2A;
+    opacity:100%;
+}
+.offer-2.active{
+    transform:scale(1);
+    background:#0F2F2A;
+    opacity:100%;
 }
 .separator{
     width:0.9%;
@@ -339,11 +354,6 @@ header{
 
 .offer-1-con, .offer-2-con {
     position: relative;
-}
-.offer-1-con {
-    margin:0 5%;
-    height:0px; /* do usuniecia */
-    overflow: hidden; /* do usuniecia */
 }
 
 .offer-2-images-flex{
@@ -435,7 +445,7 @@ header{
 }
 .offer-1-images div p{
     font-family: "Caveat", cursive;
-    font-size:32px;
+    font-size:48px;
     text-align: center;
     font-weight:bold;
 }
@@ -460,7 +470,7 @@ header{
     font-size:24px;
 }
 .offer-1-con article, .offer-2-con article{
-    font-size:32px;
+    font-size:24px;
     width:75%;
     margin:0 auto 60px;
     text-align: center;
@@ -485,14 +495,68 @@ header{
     margin-top:100px;
 }
 
-
-
-
-
-.offer-2-con{
-    display:block;
+.offer-1-con {
+    margin:0 5%;
+    transition:all 1s ease-in-out;
+    height:0px;
+    overflow: hidden;
 }
 
+.offer-2-con{
+    transition:all 1s ease-in-out;
+    height:0px;
+    overflow: hidden;
+}
+.offer-1-con.active {
+    height:auto;
+    overflow:visible;
+    transition:all 1s ease-in-out;
+}
+
+.offer-2-con.active{
+    height:auto;
+    overflow:visible;
+    transition:all 1s ease-in-out;
+}
+
+
+.domki-reservation-contact{
+    width:100%;
+    padding: 80px 0px;
+    text-align: center;
+}
+.domki-reservation-contact article{
+    width:70%;
+    margin:0 auto 64px;
+    font-size:24px;
+    text-align: center;
+}
+.domki-reservation-contact article a{
+    color:hsl(0,0%,20%);
+    transition: .3s ease-in-out;
+    border-bottom:1px solid hsla(0,0%,0%,0);
+}
+.domki-reservation-contact article a:hover{
+    color:var(--main-green);
+    border-bottom:1px solid var(--main-green);
+}
+.a-contact{
+    text-align: center;
+    background: #F23535;
+    padding:24px 64px;
+    margin:0 auto;
+    color:#fff;
+    font-size:16px;
+    letter-spacing: 1px;
+    text-shadow:2px 2px 2px #000;
+    font-family: "Roboto", sans-serif;
+    transition:all .3s ease-in-out;
+}
+.a-contact:hover{
+    border:1px solid black;
+    box-shadow:0px 0px 10px hsl(0,0%,20%);
+    text-shadow:0px 0px 5px #000;
+}
 
 
 
@@ -696,7 +760,24 @@ footer{
 
 
 
-
+@media only screen and (max-width:1400px){
+    .offer-2-name{
+        width:30%;
+        align-items:left;
+        padding-left:50px;
+    }
+    .offer-2-images {
+        width: 69.99%;
+    }
+    .offer-2-images>div:nth-child(2) {
+        margin-left: -220px;
+        margin-top: -100px;
+    }
+    .offer-1-images div img {
+        width: 300px;
+        height: 190px;
+    }
+}
 
 
 @media only screen and (max-width:1200px){
@@ -736,6 +817,62 @@ footer{
     .footer-info-con-flex {
         width:33%;
         padding:0 32px;
+    }
+
+    .description article {
+        font-size: 20px;
+        width:80%;
+        margin:0 auto;
+    }
+    .offer-1-con article, .offer-2-con article {
+        font-size: 20px;
+        width: 75%;
+        margin: 0 auto 60px;
+    }
+    .offer-1-images div p {
+        font-size: 36px;
+    }
+    .description-info p, .cost p{
+        margin-left: 24px;
+        font-size: 20px;
+    }
+    .description-info img, .cost img{
+        width:40px;
+        height:40px;
+    }
+    .aditional-info>p {
+        width: 50%;
+        font-size: 20px;
+        margin-top: 100px;
+    }
+    .domki-reservation-contact article {
+        width: 70%;
+        margin: 0 auto 64px;
+        font-size: 20px;
+    }
+    .offer-2-name p {
+        font-size: 64px;
+    }
+    .offer-2-images div {
+        width: 300px;
+        height: 190px;
+    }
+    .offer-2-orna {
+        height: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+    .offer-con h3 {
+        font-size: 36px;
+    }
+    .offer {
+        display: flex
+    ;
+        flex-direction: row;
+        width: 700px;
+        height: 125px;
+        margin: 80px auto;
     }
 }
 
@@ -791,6 +928,73 @@ footer{
         width: 20px;
         height: 20px;
     }
+
+    .description-info {
+        width: 90%;
+    }
+    .aditional-info>p {
+        width: 50%;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    .domki-reservation-contact {
+        width: 100%;
+        padding: 20px 0px 60px;
+        text-align: center;
+    }
+    .offer-1-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer-1-images div{
+        margin:10px 0px;
+    }
+    .offer-2-images-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer-2-name {
+        width: 100%;
+        padding-left: 0px;
+        margin-bottom:20px;
+    }
+    .offer-2-name p {
+        font-size: 64px;
+        margin-left:-125px;
+    }
+    .offer-2-images {
+        width: 100%;
+    }
+    .offer {
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        height: 125px;
+        margin: 80px auto;
+    }
+    .offer-2 img, .offer-1 img{
+        width:24px;
+        height:24px;
+    }
+    .offer-1 p, .offer-2 p {
+        font-size: 20px;
+    }
+    .domki-description-flex {
+        padding: 64px 20px;
+    }
+    .description h2 {
+        font-size: 48px;
+        margin-bottom: 64px;
+    }
+    .domki-description-flex>div:nth-child(4) {
+        width: 49.9%;
+        margin-top: 8px;
+        margin-left: -50px;
+    }
+    .offer-con {
+        flex-direction: column;
+        padding-top: 50px;
+    }
 }
 
 @media only screen and (max-width:850px){
@@ -815,7 +1019,7 @@ footer{
     }
     .mobile-navigation-relative{
         width:100vw;
-        height:auto;
+        min-height:100vh;
         position:relative;
         background:var(--main-white);
         padding-bottom:60px;
@@ -1013,6 +1217,106 @@ footer{
         padding-bottom:32px;
     }
 
+
+    .domki-description-flex {
+        padding: 64px 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+    }
+    .domki-description-flex>div{
+        margin:20px 0px;
+    }
+    .domki-description-flex>div:nth-child(1) {
+        width: 100%;
+        margin-top: 8px;
+        order:2;
+    }
+    .domki-description-flex>div:nth-child(3) {
+        width: 100%;
+        margin-top: 8px;
+        order:3;
+    }
+    .domki-description-flex>div:nth-child(4) {
+        width: 100%;
+        margin-top: 8px;
+        margin-left: -50px;
+        order:4;
+    }
+    .domki-description-flex>div:nth-child(2) {
+        width: 100%;
+        margin-top: 8px;
+    }
+    .i3-images div:nth-child(1) {
+        margin-left:-150px;
+    }
+    .i3-images div:nth-child(2) {
+        margin-left: 150px;
+        margin-top: -25px;
+    }
+    .i3-images div:nth-child(3) {
+        margin-top: -20px;
+        margin-left:-75px;
+    }
+    .i2-images div:nth-child(1) {
+        margin-left:-125px;
+    }
+    .i2-images div:nth-child(2) {
+        margin-left: 145px;
+        margin-top: -25px;
+    }
+    .offer-1-con article, .offer-2-con article {
+        font-size: 20px;
+        width: 90%;
+        margin: 0 auto 60px;
+    }
+    .offer-2-images>div:nth-child(1) {
+        margin-right: 0px;
+        
+    }
+    .offer-2-images>div:nth-child(2) {
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom:20px;
+    }
+    .offer-2-images>div:nth-child(3) {
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    .offer-2-orna {
+        height: 30px;
+        top: 20%;
+    }
+    .offer-description-flex {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .offer-2-con .offer-description-flex .offer-description.left {
+        margin-top: 0px;
+    }
+    .offer-description {
+        width: 80%;
+        margin:0 auto;
+    }
+    .aditional-info {
+        margin-top: 50px;
+        width:80%;
+        margin:50px auto 0px;
+    }
+    .aditional-info>p {
+        width: 100%;
+        font-size: 20px;
+        margin-top: 25px;
+        text-align: center;
+    }
+    .offer-2-con .aditional-info {
+        margin-top: 50px;
+        width:70%;
+        margin:50px auto 0px;
+    }
+
 }
 @media only screen and (max-width:600px){
     .footer-bot-flex {
@@ -1039,6 +1343,96 @@ footer{
         transform: rotate(90deg);
         left: -20%;
         top: 175px;
+    }
+    .description article {
+        font-size: 18px;
+        width: 90%;
+    }
+    .offer-1-con article, .offer-2-con article {
+        font-size: 18px;
+        width: 90%;
+        margin: 0 auto 60px;
+    }
+    .description-info p, .cost p {
+        margin-left: 24px;
+        font-size: 18px;
+    }
+    .aditional-info>p {
+        width: 100%;
+        font-size: 18px;
+        margin-top: 25px;
+        text-align: center;
+    }
+    .domki-reservation-contact article {
+        width: 80%;
+        margin: 0 auto 64px;
+        font-size: 18px;
+    }
+    .offer {
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        height: 100px;
+        margin: 80px auto;
+    }
+    .offer-1 img {
+        top: 8px;
+        left: 8px;
+    }
+    .offer-2 img {
+        top: 8px;
+        right: 8px;
+    }
+    .i3-images div:nth-child(1) {
+        margin-left: -100px;
+    }
+    .i3-images div:nth-child(2) {
+        margin-left: 100px;
+        margin-top: -25px;
+    }
+    .i2-images div:nth-child(1) {
+        margin-left: -100px;
+    }
+    .domki-description-flex>div:nth-child(4) {
+        width: 100%;
+        margin-top: 8px;
+        margin-left: 0px;
+        order: 4;
+    }
+    .i2-images div:nth-child(2) {
+        margin-left: 100px;
+        margin-top: -25px;
+    }
+    .offer-con h3 {
+        font-size: 36px;
+        width:90%;
+        margin:0 auto;
+    }
+    .offer-1 p, .offer-2 p {
+        font-size: 18px;
+    }
+    .offer-con {
+        padding-top: 0px;
+    }
+    .offer-description {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .aditional-info {
+        width: 100%;
+        margin: 50px auto 0px;
+    }
+    .domki-reservation-contact article {
+        width: 90%;
+        margin: 0 auto 64px;
+        font-size: 18px;
+    }
+    .offer-2-con .aditional-info {
+        width: 90%;
+        margin: 50px auto 0px;
+    }
+    .offer-2-con .offer-description-flex {
+        margin-top: 20px;
     }
 }
 @media only screen and (max-width:450px){
