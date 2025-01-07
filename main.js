@@ -3,6 +3,7 @@ const nav = document.querySelector('nav');
 const navIcon = document.querySelector('.navigation-icon');
 const closeIcon = document.querySelector('.close-icon');
 const mobNavigation = document.querySelector('.mobile-navigation');
+const fullContent = document.querySelector('.full-content');
 
 
 
