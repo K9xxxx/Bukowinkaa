@@ -1434,6 +1434,14 @@ footer{
     .offer-2-con .offer-description-flex {
         margin-top: 20px;
     }
+    .offer {
+        display: flex
+;
+        flex-direction: row;
+        width: 400px;
+        height: 100px;
+        margin: 40px auto;
+    }
 }
 @media only screen and (max-width:450px){
     .footer-top-info-flex {
@@ -1460,9 +1468,78 @@ footer{
     .header-content {
         width: 90%;
         padding-top: 54px;
+        height:100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-content>div{
+        margin:5vh 0px
+    }
+    .header-content>div:nth-child(2){
+        margin:2vh 0px 5vh;
     }
     header {
-        background-position:15% 50%;
+        background-position: 45% 50%;
+    }
+    .description article {
+        font-size: 16px;
+        width: 100%;
+    }
+    .offer {
+        width: 300px;
+        height: 80px;
+        margin: 30px auto;
+    }
+    .i3-images div, .i2-images div {
+        width: 200px;
+        height: 125px;
+    }
+    .description h2 {
+        font-size: 40px;
+        margin-bottom: 48px;
+    }
+    .offer-con h3 {
+        font-size: 32px;
+    }
+    .offer-1 p, .offer-2 p {
+        font-size: 16px;
+    }
+    .offer-2 img, .offer-1 img {
+        width: 16px;
+        height: 16px;
+    }
+    .offer-1-con article, .offer-2-con article {
+        font-size: 16px;
+        width: 100%;
+        margin: 0 auto 30px;
+    }
+    .offer-2-name p {
+        font-size: 40px;
+        margin-left: -125px;
+    }
+    .offer-2-orna {
+        height: 25px;
+        top: 7%;
+    }
+    .description-info img, .cost img {
+        width: 30px;
+        height: 30px;
+    }
+    .description-info p, .cost p {
+        margin-left: 16px;
+        font-size: 16px;
+    }
+    .description-info {
+        width: 100%;
+    }
+    .domki-reservation-contact article {
+        font-size: 16px;
+    }
+    .domki-reservation-contact {
+        padding: 0px 0px 60px;
+    }
+    .aditional-info>p {
+        font-size: 16px;
     }
 
 }
