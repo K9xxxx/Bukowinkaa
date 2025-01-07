@@ -22,7 +22,6 @@
 }
 .full-content{
     overflow: visible;
-    position:relative;
 }
 .full-content.sleeping{
     overflow: visible;
@@ -134,10 +133,10 @@ nav.scrolled .nav-relative{
     color:hsl(0,0%,80%);
 }
 header{
-    background:url('../img/Domki-header2.png');
+    background:url('./img/main-header.png');
     width:100%;
     height:100vh;
-    min-height:700px;
+    min-height:750px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -171,7 +170,7 @@ header{
     margin:24px auto 0px;
 }
 .tittle-of-page-article article{
-    margin-top:50px;
+    margin-top:24px;
     font-size:36px;
     font-family: "Barlow", sans-serif;
     font-style: italic;
@@ -179,7 +178,6 @@ header{
     color:var(--full-white);
     letter-spacing:1px;
     text-shadow:2px 2px 2px black;
-    padding-bottom:48px;
 }
 .tittle-of-page-button {
     margin-top:88px;
@@ -199,371 +197,264 @@ header{
     box-shadow:0px 0px 20px black;
     text-shadow:1px 1px 1px black;
 }
+.div12{
+    height:2000px;
+}
 
-.domki-description-flex{
-    padding:64px 80px;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.krotki-opis-bukowinki{
+    padding:60px 15%;
+    text-align: center;
 }
-.domki-description-flex>div:nth-child(1){
-    width:40%;
-    margin-top:8px;
-}
-.domki-description-flex>div:nth-child(2){
-    width:59.9%;
-    margin-top:8px;
-}
-.domki-description-flex>div:nth-child(3){
-    width:50%;
-    margin-top:8px;
-}
-.domki-description-flex>div:nth-child(4){
-    width:49.9%;
-    margin-top:8px;
-}
-.description h2{
+.krotki-opis-bukowinki h2{
+    color:var(--main-green);
+    font-family: "Caveat", cursive;
     font-size:64px;
-    font-family: "Caveat", cursive;
-    color:#0F2F2A;
-    margin-bottom:64px;
-    text-align: center;
 }
-.description article{
-    text-align: center;
-    font-size:24px;
-}
-.i3-images{
-    position:relative;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.i3-images div:nth-child(1){
-    background:url('../img/domek2-small.jpeg');
-    background-size: cover;
-}
-.i3-images div:nth-child(2){
-    background:url('../img/domek3-small.jpeg');
-    background-size: cover;
-    margin-left:100px;
-    margin-top:-50px;
-}
-.i3-images div:nth-child(3){
-    background:url('../img/secound-house-small.jpeg');
-    background-size: cover;
-    margin-top:-50px;
-}
-.i2-images{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-.i3-images div, .i2-images div{
-    width:300px;
-    height:190px;
-}
-.i2-images div:nth-child(1){
-    background:url('../img/img1-small.jpeg');
-    background-size:cover;
-}
-.i2-images div:nth-child(2){
-    background:url('../img/galeria-header-small.jpeg');
-    background-size:cover;
-    margin-left:145px;
-    margin-top:-75px;
-}
-.offer-con{
-    display:flex;
-    height:auto;
-    flex-direction: column;
-    padding-top:100px;
-}
-.offer-con h3{
-    text-align:center;
-    font-size:48px;
-    font-weight: 400;
-}
-.offer{
-    display:flex;
-    flex-direction:row;
-    width:700px;
-    height:150px;
-    margin:80px auto;
-
-}
-.offer-1, .offer-2{
-    width:49.5%;
-    height:100%;
-    position:relative;
-    cursor:pointer;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.offer-1 img{
-    position:absolute;
-    top:16px;
-    left:16px;
-}
-.offer-2 img{
-    position:absolute;
-    top:16px;
-    right:16px;
-}
-.offer-1 p, .offer-2 p{
-    color:#fff;
-    font-size:24px;
-    font-weight: bold;
-}
-.offer-1{
-    background:#0F2F2A;
-    opacity:80%;
-    transform:scale(0.9);
-    transition:all .3s ease-in-out;
-}
-.offer-2{
-    background:#0F2F2A;
-    opacity:80%;
-    transform: scale(0.9);
-    transition:all .3s ease-in-out;
-}
-.offer-1.active{
-    transform:scale(1);
-    background:#0F2F2A;
-    opacity:100%;
-}
-.offer-2.active{
-    transform:scale(1);
-    background:#0F2F2A;
-    opacity:100%;
-}
-.separator{
-    width:0.9%;
-    height:100%;
-    background:transparent;
-}
-
-.offers-all {
-    position: relative;
-    width: 100%;
-    padding-bottom:40px;
-}
-
-.offer-1-con, .offer-2-con {
-    position: relative;
-}
-
-.offer-2-images-flex{
-    position:relative;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-}
-.offer-2-name {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width:40%;
-}
-.offer-2-name p{
+.krotki-opis-bukowinki article{
     color:var(--full-black);
-    font-size:96px;
-    font-family: "Caveat", cursive;
-    font-weight: bold;
-}
-.offer-2-name p:nth-child(2){
-    margin-right:-250px;
-    margin-top:0px;
-}
-.offer-2-images{
-    width:59.99%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-.offer-2-images div{
-    width:370px;
-    height:230px;
-}
-.offer-2-images>div:nth-child(1){
-    background:url('../img/img1-small.jpeg');
-    background-size:cover;
-    margin-right:-390px;
-}
-.offer-2-images>div:nth-child(2){
-    background:url('../img/img-1-small.png');
-    background-size:cover;
-    margin-left:-390px;
-    margin-top:-100px;
-}
-.offer-2-images>div:nth-child(3){
-    background:url('../img/dom1-wnetrze3-small.jpeg');
-    background-size:cover;
-    margin-right:-390px;
-    margin-top:-20px;
-}
-.offer-2-orna{
-    background:#0F2F2A;
-    width:100%;
-    height:50px;
-    position:absolute;
-    top:50%;
-    left:0;
-    transform:translateY(-50%);
-    z-index:-1;
-    
-}
-.offer-2-con .offer-description-flex{
-    margin:0 5%;
-}
-.offer-2-con .aditional-info{
-    margin-top:-50px;
-    margin-left:5%;
-    margin-right:5%;
-}
-.offer-2-con .offer-description-flex{
-    margin-top:100px;
-}
-.offer-2-con .offer-description-flex .offer-description.left{
-    margin-top:-125px;
+    font-size:24px;
+    margin-top:60px;
+    line-height: 40px;
 }
 
-
-
-
-.offer-1-images{
+.paralax-1{
+    background: url('./img/paralax-1.jpg') no-repeat center center; /* Ustawia obraz w centrum */
+    background-size: cover; /* Obraz dostosowuje się do rozmiaru sekcji */
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed; /* Kluczowy element dla efektu paralaksy */
+    background-position: center; /* Ustawia pozycję tła */
+}
+.krotki-opis-o-nas{
+    padding:60px 5%;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.offer-1-images div img{
-    width:370px;
-    height:230px;
+.krotki-opis-o-nas .img-o-nas{
+    width:35%;
+    height:700px;
+    background:url('./img/o-nas.jpg');
+    background-size: cover;
 }
-.offer-1-images div p{
+.krotki-opis-o-nas .opis-o-nas{
+    width:45%;
+    text-align: center;
+}
+.krotki-opis-o-nas .opis-o-nas h3{
+    color: var(--main-green);
+    font-size:64px;
     font-family: "Caveat", cursive;
-    font-size:48px;
+}
+.krotki-opis-o-nas .opis-o-nas article{
+    font-size:24px;
+    margin-top:60px;
+    color:var(--full-black);
+    line-height:30px;
+    margin-bottom:60px;
+}
+.krotki-opis-o-nas a {
+    width:fit-content !important;
+    display:block;
+    margin:0 auto;
+}
+.krotki-opis-o-nas a div{
+    border:1px solid black;
+    padding:24px 64px;
+    color:var(--full-black);
+    width:fit-content;
+    font-weight:bold;
+}
+
+.krotki-opis-domki{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:60px 5%;
+    justify-content: space-around;
+    background-color: var(--main-green);
+}
+.krotki-opis-domki div{
+    width:45%;
+    margin-top:24px;
+}
+.krotki-opis-domki div .opis-domki-domek{
+    width:350px;
+    height:225px;
+    margin-top:0px;
+    box-shadow:0px 0px 15px black;
+}
+.krotki-opis-domki div .opis-domki-domek:nth-child(1){
+    background:url('./img/domek2-small.jpeg');
+    background-size: cover;
+}
+.krotki-opis-domki div .opis-domki-domek:nth-child(2){
+    background:url('./img/domek3-small.jpeg');
+    background-size: cover;
+    margin-left:150px;
+    margin-top:-80px;
+}
+.krotki-opis-domki div .opis-domki-domek:nth-child(3){
+    background:url('./img/secound-house-small.jpeg');
+    background-size: cover;
+    margin-left:70px;
+    margin-top:-50px;
+}
+.krotki-opis-domki div h4{
+    font-family: "Caveat", cursive;
+    font-size:64px;
+    color:white;
+    text-align: center;
+}
+.krotki-opis-domki div article{
+    font-size:24px;
+    color:white;
+    text-align: center;
+    margin-top:60px;
+    line-height:40px;
+}
+.krotki-opis-domki div:nth-child(5){
+    width:100%;
+    margin-top:64px;
+}
+.krotki-opis-domki div a {
+    margin:0 auto;
+    width:fit-content;
+    display:block;
+}
+.krotki-opis-domki div a div{
+    padding:24px 48px;
+    border:1px solid white;
+    color:white;
+    margin:0 auto;
+    text-align: center;
+    width:fit-content;
+    letter-spacing:1px;
+    font-size: 16px;
+    font-weight:bold;
+}
+.paralax-2{
+    background: url('./img/paralax-2.jpg') no-repeat center center;
+    background-size: cover; 
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed; 
+    background-position: center;
+}
+
+.spedzanie-czasu{
+    border:4px solid var(--main-green);
+    width:60%;
+    margin:-100px auto 0px;
+    display:flex;
+    flex-direction: column;
+    background:var(--main-white);
+    z-index:77;
+    position:relative;
+}
+.spedzanie-czasu h5{
+    font-family: "Caveat", cursive;
+    font-size:64px;
+    text-align: center;
+    color: var(--main-green);
+    margin-top:16px;
+}
+.spedzanie-czasu-rodzaje-atrakcji{
+    padding:64px 8px 16px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.atrakcja{
+    display:flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width:23%;
+    justify-content: space-around;
+    margin: 0px 0.5% 32px;
+}
+.atrakcja p{
+    text-align: center;
+    font-size:20px;
+    margin-top:16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: hsl(0,0%,10%);
+}
+.atrakcja-img-con{
+    margin:0 auto;
+}
+.atrakcja:nth-child(3) .atrakcja-img-con, .atrakcja:nth-child(5) .atrakcja-img-con{
+    transform: scale(0.9);
+}
+.spedzanie-czasu a{
+    width:fit-content;
+    margin:0 auto 32px;
+}
+
+.spedzanie-czasu a div{
+    color:var(--main-green);
+    font-size:16px;
+    border:2px solid var(--main-green);
+    padding:16px 32px;
     text-align: center;
     font-weight:bold;
 }
-.offer-description-flex{
-    display:flex;
-    flex-direction:row;
-    margin-top:60px;
-}
-.offer-description{
-    display:flex;
-    flex-direction:column;
-    width:49.9%;
-}
-.description-info{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    margin:8px 0px;
-}
-.description-info p{
-    margin-left:24px;
-    font-size:24px;
-}
-.offer-1-con article, .offer-2-con article{
-    font-size:24px;
-    width:75%;
-    margin:0 auto 60px;
-    text-align: center;
-}
-.aditional-info{
+
+.mazury{
+    width:80%;
+    border:4px solid var(--main-green);
+    padding:132px 2% 32px;
+    margin:-100px auto 100px;
+    z-index:1;
     position:relative;
-    margin-top:50px;
 }
-.cost{
+.mazury h6{
+    font-family: "Caveat", cursive;
+    font-size:64px;
+    text-align: center;
+    color: var(--main-green);
+}
+.mazury-flex{
     display:flex;
     flex-direction: row;
+    justify-content:space-around;
     align-items: center;
+    margin-top:32px;
 }
-.cost p{
-    font-size:24px;
-    color:#F23535;
-    margin-left:24px;
+.mazury-img{
+    width:500px;
+    height:600px;
 }
-.aditional-info>p{
+.mazury-img img{
+    width:100%;
+    height:100%;
+}
+.mazury-opis{
     width:50%;
     font-size:24px;
-    margin-top:100px;
-}
-
-.offer-1-con {
-    margin:0 5%;
-    transition:all 1s ease-in-out;
-    height:0px;
-    overflow: hidden;
-}
-
-.offer-2-con{
-    transition:all 1s ease-in-out;
-    height:0px;
-    overflow: hidden;
-}
-.offer-1-con.active {
-    height:auto;
-    overflow:visible;
-    transition:all 1s ease-in-out;
-}
-
-.offer-2-con.active{
-    height:auto;
-    overflow:visible;
-    transition:all 1s ease-in-out;
-}
-
-
-.domki-reservation-contact{
-    width:100%;
-    padding: 80px 0px;
-    text-align: center;
-}
-.domki-reservation-contact article{
-    width:70%;
-    margin:0 auto 64px;
-    font-size:24px;
-    text-align: center;
-}
-.domki-reservation-contact article a{
-    color:hsl(0,0%,20%);
-    transition: .3s ease-in-out;
-    border-bottom:1px solid hsla(0,0%,0%,0);
-}
-.domki-reservation-contact article a:hover{
-    color:var(--main-green);
-    border-bottom:1px solid var(--main-green);
-}
-.a-contact{
-    text-align: center;
-    background: #F23535;
-    padding:24px 64px;
-    margin:0 auto;
-    color:#fff;
-    font-size:16px;
+    line-height:30px;
     letter-spacing: 1px;
-    text-shadow:2px 2px 2px #000;
-    font-family: "Roboto", sans-serif;
-    transition:all .3s ease-in-out;
+    text-align: center;
+    padding:0px 32px;
 }
-.a-contact:hover{
-    border:1px solid black;
-    box-shadow:0px 0px 10px hsl(0,0%,20%);
-    text-shadow:0px 0px 5px #000;
+.map-mob{
+    display:none;
 }
-
-
-
-
-
-footer{
+.map{
+    width:100%;
+    height:500px;
     position:relative;
+}
+.map-desk, .map-mob{
+    width:100%;
+    height:100%;
+}
+.map-desk iframe, .map-mob iframe{
+    width:100%;
+    height:100%;
+}
+footer{
     width:100%;
     height:675px;
 }
@@ -760,24 +651,7 @@ footer{
 
 
 
-@media only screen and (max-width:1400px){
-    .offer-2-name{
-        width:30%;
-        align-items:left;
-        padding-left:50px;
-    }
-    .offer-2-images {
-        width: 69.99%;
-    }
-    .offer-2-images>div:nth-child(2) {
-        margin-left: -220px;
-        margin-top: -100px;
-    }
-    .offer-1-images div img {
-        width: 300px;
-        height: 190px;
-    }
-}
+
 
 
 @media only screen and (max-width:1200px){
@@ -786,6 +660,28 @@ footer{
     }
     .tittle-of-page-article article {
         font-size: 28px;
+    }
+    .krotki-opis-bukowinki article {
+        font-size: 20px;
+        margin-top: 60px;
+        line-height: 30px;
+    }
+    .krotki-opis-o-nas .opis-o-nas article {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .krotki-opis-domki div article {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .mazury-opis {
+        font-size: 20px;
+        line-height: 25px;
+        padding:0px 32px;
+    }
+    .mazury-img {
+        width: 400px;
+        height: 500px;
     }
     .footer-nav a {
         margin: 0 32px;
@@ -818,61 +714,18 @@ footer{
         width:33%;
         padding:0 32px;
     }
-
-    .description article {
-        font-size: 20px;
-        width:80%;
-        margin:0 auto;
+    .map {
+        height: 400px;
     }
-    .offer-1-con article, .offer-2-con article {
-        font-size: 20px;
-        width: 75%;
-        margin: 0 auto 60px;
+    .krotki-opis-domki div .opis-domki-domek:nth-child(2) {
+        margin-left: 100px;
     }
-    .offer-1-images div p {
-        font-size: 36px;
+    .krotki-opis-o-nas .img-o-nas {
+        width: 35%;
+        height: 500px;
     }
-    .description-info p, .cost p{
-        margin-left: 24px;
-        font-size: 20px;
-    }
-    .description-info img, .cost img{
-        width:40px;
-        height:40px;
-    }
-    .aditional-info>p {
-        width: 50%;
-        font-size: 20px;
-        margin-top: 100px;
-    }
-    .domki-reservation-contact article {
-        width: 70%;
-        margin: 0 auto 64px;
-        font-size: 20px;
-    }
-    .offer-2-name p {
-        font-size: 64px;
-    }
-    .offer-2-images div {
-        width: 300px;
-        height: 190px;
-    }
-    .offer-2-orna {
-        height: 30px;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: -1;
-    }
-    .offer-con h3 {
-        font-size: 36px;
-    }
-    .offer {
-        display: flex
-    ;
-        flex-direction: row;
-        width: 700px;
-        height: 125px;
-        margin: 80px auto;
+    .krotki-opis-o-nas {
+        align-items: center;
     }
 }
 
@@ -897,6 +750,62 @@ footer{
     }
     .tittle-of-page-article article {
         font-size: 24px;
+    }
+    .krotki-opis-bukowinki h2 {
+        font-size: 48px;
+    }
+    .krotki-opis-o-nas .opis-o-nas h3 {
+        font-size: 48px;
+    }
+    .krotki-opis-o-nas .img-o-nas {
+        width: 35%;
+        height: 400px;
+    }
+    .krotki-opis-domki div .opis-domki-domek {
+        width: 300px;
+        height: 200px;
+    }
+    .krotki-opis-domki div .opis-domki-domek:nth-child(2) {
+        margin-left: 70px;
+    }
+    .krotki-opis-domki div .opis-domki-domek:nth-child(3) {
+        margin-left: 40px;
+    }
+    .krotki-opis-domki>div:nth-child(1){
+        padding-top:80px;
+    }
+    .spedzanie-czasu h5 {
+        font-size: 48px;
+        margin-top: 16px;
+    }
+    .atrakcja {
+        width: 20%;
+        justify-content: space-around;
+        margin:none;
+        margin-bottom:32px;
+    }
+    .spedzanie-czasu-rodzaje-atrakcji {
+        justify-content: space-around;
+    }
+    .atrakcja p {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 16px;
+    }
+    .mazury {
+        width: 85%;
+    }
+    .mazury-img {
+        width: 300px;
+        height: 400px;
+    }
+    .mazury-opis {
+        font-size: 20px;
+        line-height: 22px;
+        padding: 0px 16px;
+    }
+    .mazury h6 {
+        font-size: 48px;
     }
     .footer-info-header-p {
         font-size: 24px;
@@ -928,72 +837,8 @@ footer{
         width: 20px;
         height: 20px;
     }
-
-    .description-info {
-        width: 90%;
-    }
-    .aditional-info>p {
-        width: 50%;
-        font-size: 20px;
-        margin-top: 25px;
-    }
-    .domki-reservation-contact {
-        width: 100%;
-        padding: 20px 0px 60px;
-        text-align: center;
-    }
-    .offer-1-images {
-        flex-direction: column;
-        align-items: center;
-    }
-    .offer-1-images div{
-        margin:10px 0px;
-    }
-    .offer-2-images-flex {
-        flex-direction: column;
-        align-items: center;
-    }
-    .offer-2-name {
-        width: 100%;
-        padding-left: 0px;
-        margin-bottom:20px;
-    }
-    .offer-2-name p {
-        font-size: 64px;
-        margin-left:-125px;
-    }
-    .offer-2-images {
-        width: 100%;
-    }
-    .offer {
-        display: flex;
-        flex-direction: row;
-        width: 500px;
-        height: 125px;
-        margin: 80px auto;
-    }
-    .offer-2 img, .offer-1 img{
-        width:24px;
-        height:24px;
-    }
-    .offer-1 p, .offer-2 p {
-        font-size: 20px;
-    }
-    .domki-description-flex {
-        padding: 64px 20px;
-    }
-    .description h2 {
+    .krotki-opis-domki div h4 {
         font-size: 48px;
-        margin-bottom: 64px;
-    }
-    .domki-description-flex>div:nth-child(4) {
-        width: 49.9%;
-        margin-top: 8px;
-        margin-left: -50px;
-    }
-    .offer-con {
-        flex-direction: column;
-        padding-top: 50px;
     }
 }
 
@@ -1182,7 +1027,145 @@ footer{
         left: 10%;
         letter-spacing: 5px;
     }
+    .krotki-opis-bukowinki article {
+        margin-top: 48px;
+    }
+    .paralax-1 {
+        height: 300px;
+        display:none;
+    }
+    .krotki-opis-o-nas {
+        padding: 0px 0px;
+        display: block;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .krotki-opis-o-nas .img-o-nas {
+        display:none;
+    }
+    .krotki-opis-o-nas .opis-o-nas {
+        width: 100%;
+        text-align: center;
+        min-height:550px;
+        margin:0 auto;
+        background:url('./img/o-nas-darker-850.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:50% 40%;
+        color:#fff;
+    }
+    .krotki-opis-o-nas .opis-o-nas h3 {
+        color: #fff;
+        padding:40px 0px;
+    }
+    .krotki-opis-o-nas .opis-o-nas article {
+        color:#fff;
+        padding:0px 0px 40px;
+        width:75%;
+        margin:0 auto;
+
+    }
+    .krotki-opis-o-nas a {
+        padding-bottom:40px;
+    }
+    .krotki-opis-o-nas a div {
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    .krotki-opis-domki {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0px;
+    }
+    .krotki-opis-domki div article {
+        width:75%;
+        margin:40px auto 0px;
+    }
+    .krotki-opis-domki div{
+        width:100%;
+    }
+    .krotki-opis-domki > div:nth-child(1){
+        order:2;
+        display:flex;
+        flex-direction:column;
+        padding-top:24px;
+        
+    }
+    .krotki-opis-domki > div:nth-child(1) div{
+        margin:12px auto !important;
+
+    }
+    .krotki-opis-domki > div:nth-child(2){
+        order:1;
+    }
+    .krotki-opis-domki > div:nth-child(3){
+        order:3;
+        margin-top:0;
+    }
+    .krotki-opis-domki > div:nth-child(3) article{
+        margin-top:40px;
+    }
+    .krotki-opis-domki > div:nth-child(4){
+        order:5;
+        display:none;
+    }
+    .krotki-opis-domki > div:nth-child(5){
+        order:4;
+        margin-top:40px;
+    }
     
+    .paralax-2 {
+        height: 300px;
+        background: url('./img/paralax-2-small.jpg') no-repeat center center;
+        background-size: cover; 
+        width: 100%;
+        background-attachment: fixed; 
+        background-position: center; 
+    }
+    .spedzanie-czasu {
+        border: 4px solid var(--main-green);
+        width: 90%;
+        margin: -100px auto 0px;
+        display: flex
+    }
+    .atrakcja {
+        flex-wrap: nowrap;
+    }
+    .atrakcja-img-con{
+        width:80%;
+        height:80%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .atrakcja-img-con img{
+        width:100%;
+        height:100%;
+    }
+    .mazury {
+        width: 80%;
+        border: none;
+        padding: 32px 2% 32px;
+        margin: 24px auto 24px;
+        z-index: 1;
+        position: relative;
+    }
+    .mazury-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 12px;
+    }
+    .mazury-opis {
+        width:100%;
+        margin-top:24px;
+        letter-spacing:0px;
+        line-height: 24px;
+    }
+    .map {
+        height: 300px;
+    }
     .footer-top-nav-flex {
         display: none;
     }
@@ -1217,106 +1200,6 @@ footer{
         padding-bottom:32px;
     }
 
-
-    .domki-description-flex {
-        padding: 64px 20px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        flex-direction:column;
-    }
-    .domki-description-flex>div{
-        margin:20px 0px;
-    }
-    .domki-description-flex>div:nth-child(1) {
-        width: 100%;
-        margin-top: 8px;
-        order:2;
-    }
-    .domki-description-flex>div:nth-child(3) {
-        width: 100%;
-        margin-top: 8px;
-        order:3;
-    }
-    .domki-description-flex>div:nth-child(4) {
-        width: 100%;
-        margin-top: 8px;
-        margin-left: -50px;
-        order:4;
-    }
-    .domki-description-flex>div:nth-child(2) {
-        width: 100%;
-        margin-top: 8px;
-    }
-    .i3-images div:nth-child(1) {
-        margin-left:-150px;
-    }
-    .i3-images div:nth-child(2) {
-        margin-left: 150px;
-        margin-top: -25px;
-    }
-    .i3-images div:nth-child(3) {
-        margin-top: -20px;
-        margin-left:-75px;
-    }
-    .i2-images div:nth-child(1) {
-        margin-left:-125px;
-    }
-    .i2-images div:nth-child(2) {
-        margin-left: 145px;
-        margin-top: -25px;
-    }
-    .offer-1-con article, .offer-2-con article {
-        font-size: 20px;
-        width: 90%;
-        margin: 0 auto 60px;
-    }
-    .offer-2-images>div:nth-child(1) {
-        margin-right: 0px;
-        
-    }
-    .offer-2-images>div:nth-child(2) {
-        margin-left: 0px;
-        margin-top: 20px;
-        margin-bottom:20px;
-    }
-    .offer-2-images>div:nth-child(3) {
-        margin-right: 0px;
-        margin-top: 0px;
-    }
-    .offer-2-orna {
-        height: 30px;
-        top: 20%;
-    }
-    .offer-description-flex {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-    .offer-2-con .offer-description-flex .offer-description.left {
-        margin-top: 0px;
-    }
-    .offer-description {
-        width: 80%;
-        margin:0 auto;
-    }
-    .aditional-info {
-        margin-top: 50px;
-        width:80%;
-        margin:50px auto 0px;
-    }
-    .aditional-info>p {
-        width: 100%;
-        font-size: 20px;
-        margin-top: 25px;
-        text-align: center;
-    }
-    .offer-2-con .aditional-info {
-        margin-top: 50px;
-        width:70%;
-        margin:50px auto 0px;
-    }
-
 }
 @media only screen and (max-width:600px){
     .footer-bot-flex {
@@ -1339,111 +1222,94 @@ footer{
     .footer-info-con-flex {
         text-align: center;
     }
-    .footer-abs-bukowinka {
+        .footer-abs-bukowinka {
         transform: rotate(90deg);
         left: -20%;
         top: 175px;
     }
-    .description article {
+    .mazury-opis {
         font-size: 18px;
+        line-height: unset;
+        padding: 0px 16px;
+        margin-top:40px;
+    }
+    .mazury {
+        width: 95%;
+        border: none;
+        padding: 32px 0% 32px;
+        margin: 0px auto;
+        z-index: 1;
+        position: relative;
+    }
+    .spedzanie-czasu {
+        border: 4px solid var(--main-green);
         width: 90%;
-    }
-    .offer-1-con article, .offer-2-con article {
-        font-size: 18px;
-        width: 90%;
-        margin: 0 auto 60px;
-    }
-    .description-info p, .cost p {
-        margin-left: 24px;
-        font-size: 18px;
-    }
-    .aditional-info>p {
-        width: 100%;
-        font-size: 18px;
-        margin-top: 25px;
-        text-align: center;
-    }
-    .domki-reservation-contact article {
-        width: 80%;
-        margin: 0 auto 64px;
-        font-size: 18px;
-    }
-    .offer {
+        margin: -100px auto 0px;
         display: flex;
-        flex-direction: row;
-        width: 400px;
-        height: 100px;
-        margin: 80px auto;
     }
-    .offer-1 img {
-        top: 8px;
-        left: 8px;
+    .atrakcja {
+        width:49%;
+        margin-bottom: 16px;
     }
-    .offer-2 img {
-        top: 8px;
-        right: 8px;
+    .atrakcja-img-con {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .i3-images div:nth-child(1) {
-        margin-left: -100px;
+    .krotki-opis-domki div a div {
+        padding: 16px 32px;
+        border: 1px solid white;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+        width: fit-content;
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-weight: bold;
     }
-    .i3-images div:nth-child(2) {
-        margin-left: 100px;
-        margin-top: -25px;
+        .krotki-opis-domki div article {
+        width: 90%;
+        margin: 40px auto 0px;
+        font-size:18px;
+        line-height:unset;
     }
-    .i2-images div:nth-child(1) {
-        margin-left: -100px;
+    .krotki-opis-o-nas a div {
+        font-size:14px;
+        padding:16px 48px;
     }
-    .domki-description-flex>div:nth-child(4) {
-        width: 100%;
-        margin-top: 8px;
-        margin-left: 0px;
-        order: 4;
+    .krotki-opis-o-nas .opis-o-nas article {
+        font-size:18px;
+        width: 90%;
+        line-height:unset;
     }
-    .i2-images div:nth-child(2) {
-        margin-left: 100px;
-        margin-top: -25px;
+    .krotki-opis-bukowinki article {
+        font-size: 18px;
+        margin-top: 40px;
+        line-height:unset;
     }
-    .offer-con h3 {
-        font-size: 36px;
+    .krotki-opis-bukowinki {
+        padding: 40px 0%;
+        text-align: center;
         width:90%;
         margin:0 auto;
     }
-    .offer-1 p, .offer-2 p {
-        font-size: 18px;
+    .spedzanie-czasu a div {
+        font-size: 14px;
+        padding: 16px 32px;
     }
-    .offer-con {
-        padding-top: 0px;
-    }
-    .offer-description {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .aditional-info {
-        width: 100%;
-        margin: 50px auto 0px;
-    }
-    .domki-reservation-contact article {
-        width: 90%;
-        margin: 0 auto 64px;
-        font-size: 18px;
-    }
-    .offer-2-con .aditional-info {
-        width: 90%;
-        margin: 50px auto 0px;
-    }
-    .offer-2-con .offer-description-flex {
-        margin-top: 20px;
-    }
-    .offer {
-        display: flex
-;
-        flex-direction: row;
-        width: 400px;
-        height: 100px;
-        margin: 40px auto;
+    .spedzanie-czasu-rodzaje-atrakcji {
+        padding-top:40px;
     }
 }
 @media only screen and (max-width:450px){
+    .map-desk{
+        display:none;
+    }
+    .map-mob{
+        display:flex;
+    }
     .footer-top-info-flex {
         padding: 0px 20px;
         flex-direction: column;
@@ -1462,84 +1328,54 @@ footer{
     .footer-bot-flex>div {
         margin: 12px auto 0px;
     }
-    .footer-bot-credits {
+        .footer-bot-credits {
         padding: 8px 0px;
+    }
+    .mazury-opis {
+        font-size: 18px;
+        line-height: unset;
+        padding: 0px 0px;
+        margin-top: 40px;
+    }
+        .mazury h6 {
+        font-size: 40px;
+    }
+    .spedzanie-czasu h5 {
+        font-size: 40px;
+    }
+    .krotki-opis-domki div h4 {
+        font-size: 40px;
+    }
+    .krotki-opis-o-nas .opis-o-nas h3 {
+        font-size: 40px;
+    }
+    .krotki-opis-bukowinki h2 {
+        font-size: 40px;
     }
     .header-content {
         width: 90%;
-        padding-top: 54px;
-        height:100vh;
+        padding-top: 0px;
+        height:100%;
         justify-content: center;
         align-items: center;
     }
     .header-content>div{
-        margin:5vh 0px
+        margin:3vh 0px;
     }
     .header-content>div:nth-child(2){
-        margin:2vh 0px 5vh;
+        margin:1vh 0px 3vh;
+    }
+    .krotki-opis-bukowinki article {
+        margin-top: 40px;
+    }
+    .krotki-opis-bukowinki article, .krotki-opis-o-nas .opis-o-nas article, .krotki-opis-domki div article, .atrakcja p, .mazury-opis {
+        font-size: 16px;
+    }
+    .atrakcja {
+        margin-bottom: 8px;
     }
     header {
-        background-position: 45% 50%;
-    }
-    .description article {
-        font-size: 16px;
-        width: 100%;
-    }
-    .offer {
-        width: 300px;
-        height: 80px;
-        margin: 30px auto;
-    }
-    .i3-images div, .i2-images div {
-        width: 200px;
-        height: 125px;
-    }
-    .description h2 {
-        font-size: 40px;
-        margin-bottom: 48px;
-    }
-    .offer-con h3 {
-        font-size: 32px;
-    }
-    .offer-1 p, .offer-2 p {
-        font-size: 16px;
-    }
-    .offer-2 img, .offer-1 img {
-        width: 16px;
-        height: 16px;
-    }
-    .offer-1-con article, .offer-2-con article {
-        font-size: 16px;
-        width: 100%;
-        margin: 0 auto 30px;
-    }
-    .offer-2-name p {
-        font-size: 40px;
-        margin-left: -125px;
-    }
-    .offer-2-orna {
-        height: 25px;
-        top: 7%;
-    }
-    .description-info img, .cost img {
-        width: 30px;
-        height: 30px;
-    }
-    .description-info p, .cost p {
-        margin-left: 16px;
-        font-size: 16px;
-    }
-    .description-info {
-        width: 100%;
-    }
-    .domki-reservation-contact article {
-        font-size: 16px;
-    }
-    .domki-reservation-contact {
-        padding: 0px 0px 60px;
-    }
-    .aditional-info>p {
-        font-size: 16px;
+        background-position:15% 50%;
     }
 
 }
@@ -1551,6 +1387,25 @@ footer{
     .tittle-of-page-article article {
         margin-top: 24px;
         font-size: 16px;
+    }
+    .krotki-opis-bukowinki h2, .krotki-opis-o-nas .opis-o-nas h3,     .krotki-opis-domki div h4, .spedzanie-czasu h5, .mazury h6{
+        font-size: 36px;
+    }
+    .krotki-opis-domki div .opis-domki-domek {
+        width: 280px;
+        height: 190px;
+    }
+    .spedzanie-czasu {
+        border: 4px solid var(--main-green);
+        width: 95%;
+        margin: -100px auto 0px;
+        display: flex;
+    }
+    .mazury {
+        width: 100%;
+    }
+    .mazury-opis{
+        width:95%;
     }
     .footer-abs-bukowinka {
         left: -40%;
