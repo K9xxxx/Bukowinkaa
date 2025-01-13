@@ -406,6 +406,7 @@ footer{
 .galeria-description article{
     font-size:24px;
     text-align: center;
+    font-family: "Barlow", sans-serif;
 }
 
 
@@ -422,6 +423,8 @@ h1{
 .container{
   width:80%;
   margin:0 auto;
+  padding-bottom:60px;
+  padding-top:60px;
 }
 
 a{
@@ -431,7 +434,7 @@ a{
     width: 100%;
     height: auto;
 }
-.mfp-bottom-bar,*{
+.mfp-bottom-bar{
    font-family: 'Abel', sans-serif;
 }
 .magnific-img {
@@ -838,6 +841,7 @@ img.mfp-img {
 
 
 @media only screen and (max-width:1200px){
+    
     .div-anchor {
         margin: 0 16px;
     }
@@ -874,6 +878,12 @@ img.mfp-img {
     .footer-info-con-flex {
         width:33%;
         padding:0 32px;
+    }
+    .galeria-description{
+        width:100%;
+    }
+    .galeria-description article {
+        font-size: 20px;
     }
 }
 
@@ -928,6 +938,10 @@ img.mfp-img {
         margin: 4px 0px 4px 32px;
         width: 20px;
         height: 20px;
+    }
+    .galeria-description h2 {
+        font-size: 48px;
+        margin-bottom: 64px;
     }
 }
 
@@ -1150,6 +1164,9 @@ img.mfp-img {
         width: fit-content;
         padding-bottom:32px;
     }
+    .galeria-description{
+        padding:64px;
+    }
 
 }
 @media only screen and (max-width:600px){
@@ -1177,6 +1194,12 @@ img.mfp-img {
         transform: rotate(90deg);
         left: -20%;
         top: 175px;
+    }
+    .galeria-description article {
+        font-size: 18px;
+    }
+    .galeria-description{
+        padding:64px 24px 24px;
     }
 }
 @media only screen and (max-width:450px){
@@ -1213,6 +1236,19 @@ img.mfp-img {
     }
     .header-content>div:nth-child(2){
         margin:2vh 0px 5vh;
+    }
+    .galeria-description article {
+        font-size: 16px;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 60px;
+        padding-top: 20px;
+    }
+    .galeria-description h2 {
+        font-size: 48px;
+        margin-bottom: 32px;
     }
 
 }
