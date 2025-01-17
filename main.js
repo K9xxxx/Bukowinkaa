@@ -9,6 +9,8 @@ const fullContent = document.querySelector('.full-content');
 
 let scrollPosition = 0;
 
+
+
 // Zablokowanie przewijania
 function disableScroll() {
   scrollPosition = window.pageYOffset;

@@ -58,7 +58,6 @@ nav.scrolled .nav-relative .nav-anchors .div-anchor a:hover + .icon{
     color:hsl(0,0%,30%);
 }
 nav.scrolled .nav-relative .nav-anchors .div-anchor .icon{
-    color:var(--full-black);
 }
 nav.scrolled .nav-relative .nav-socials .nav-socials-flex .icon{
     color:var(--full-black);
@@ -101,6 +100,25 @@ nav.scrolled .nav-relative{
     font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
 }
+.a-active{
+    color: #1e5f54 !important;
+}
+.mob-navigation-logo .a-active{
+    color:#fff !important;
+    text-shadow:1px 1px 4px #000;
+}
+.anchor-subweb a{
+    transition:all .3s ease-in-out;
+}
+.anchor-subweb a:hover{
+    text-shadow:1px 1px 4px #000;
+}
+.navigation-icon{
+    cursor:pointer;
+}
+.close-icon{
+    cursor:pointer;
+}
 .div-anchor a:hover{
     color:hsl(0,0%,80%);
 }
@@ -114,6 +132,9 @@ nav.scrolled .nav-relative{
 .div-anchor .icon{
     margin:0 auto -10px;
     color:white;
+}
+.div-anchor .icon.svg-active{
+    color:#1e5f54;
 }
 
 .nav-socials{
@@ -196,9 +217,6 @@ header{
 .tittle-of-page-button a:hover{
     box-shadow:0px 0px 20px black;
     text-shadow:1px 1px 1px black;
-}
-.div12{
-    height:2000px;
 }
 
 .krotki-opis-bukowinki{
@@ -866,7 +884,7 @@ footer{
         width:100vw;
         min-height:100vh;
         position:relative;
-        background:var(--main-white);
+        background:#1E5F54;
         padding-bottom:60px;
     }
     .mobile-navigation.sleeping{
@@ -941,10 +959,10 @@ footer{
     .mob-navigation-anchors .mob-navigation-logo a{
         font-family: "Dancing Script", cursive;
         font-size:64px;
-        color:#000
+        color:#fff;
     }
     .mob-navigation-anchors .mob-navigation-logo a + svg{
-        color:#000
+        color:#fff;
     }
     .anchor-subweb{
         margin:16px auto 0px;
@@ -953,8 +971,8 @@ footer{
     }
     .anchor-subweb a{
         text-align: center;
-        color:var(--full-black);
-        font-size:36px;
+        color:#fff;
+        font-size:24px;
     }
     .mob-navigation-anchors a:nth-child(1){
         margin-top:0px;
@@ -984,6 +1002,7 @@ footer{
     }
     .mob-icon{
         margin:0px 8px;
+        color:#fff;
     }
 
 
