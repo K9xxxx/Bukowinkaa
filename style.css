@@ -181,6 +181,7 @@ header{
 }
 .header-content>div:nth-child(2){
     margin:1vh auto 3vh;
+    min-height:2px;
 }
 .tittle-of-page{
     display:flex;
@@ -1386,7 +1387,7 @@ footer{
     }
     .header-content {
         width: 90%;
-        padding-top: 0px;
+        padding-top: 20px;
         height:100%;
         justify-content: center;
         align-items: center;
