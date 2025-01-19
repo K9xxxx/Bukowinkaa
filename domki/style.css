@@ -1502,7 +1502,7 @@ footer{
         margin:5vh 0px
     }
     .header-content>div:nth-child(2){
-        margin:2vh 0px 5vh;
+        margin:2vh auto 5vh;
     }
     header {
         background-position: 45% 50%;

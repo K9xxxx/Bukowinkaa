@@ -1395,7 +1395,7 @@ footer{
         margin:3vh 0px;
     }
     .header-content>div:nth-child(2){
-        margin:1vh 0px 3vh;
+        margin:1vh auto 3vh;
     }
     .krotki-opis-bukowinki article {
         margin-top: 40px;
