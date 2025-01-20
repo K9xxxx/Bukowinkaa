@@ -995,6 +995,15 @@ form input:focus ~ p{
     .kontakt-info-flex {
         padding: 24px;
     }
+    .kontakt-info{
+        text-align:center;
+    }
+    .info-flex{
+       margin:4px auto;
+    }
+    .type-of-info{
+        margin-bottom:8px;
+    }
 
 }
 @media only screen and (max-width:600px){
@@ -1103,9 +1112,7 @@ form input:focus ~ p{
     .full-form {
         padding: 16px;
     }
-    .kontakt-info {
-        margin: 0 0px;
-    }
+    
 
 }
 @media only screen and (max-width:350px){
