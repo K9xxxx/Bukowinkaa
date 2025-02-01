@@ -9,6 +9,53 @@ const fullContent = document.querySelector('.full-content');
 
 let scrollPosition = 0;
 $(document).ready(function(){
+
+  gsap.to('.galeria-description h2',0,{opacity:0})
+  gsap.to('.galeria-description article',0,{opacity:0})
+
+  gsap.fromTo(".tittle-of-page h1",{opacity:0, y:-100},{opacity:1, y:0, duration:2, delay:0.5})
+  gsap.fromTo(".tittle-of-page-ornament",{scale:0},{scale:1, duration:3, delay:2})
+  gsap.fromTo(".tittle-of-page-article",{opacity:0},{opacity:1, delay:2, duration:1})
+
+  gsap.registerPlugin(ScrollTrigger);
+
+    // Przykładowa animacja
+    gsap.to(".galeria-description h2", {
+      scrollTrigger: {
+        trigger: ".galeria-description h2", 
+        start: "top 70%",
+        markers: true,
+      },
+      opacity:1
+    });
+
+    gsap.to(".galeria-description article", {
+      scrollTrigger: {
+        trigger: ".galeria-description h2", 
+        start: "top 70%",
+        markers: true,
+      },
+      opacity:1
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     $('.image-popup-vertical-fit').magnificPopup({
         type: 'image',
       mainClass: 'mfp-with-zoom', 
@@ -29,11 +76,8 @@ $(document).ready(function(){
     }
     
     });
-    
-    });
 
-
-// Zablokowanie przewijania
+    // Zablokowanie przewijania
 function disableScroll() {
   scrollPosition = window.pageYOffset;
   document.body.style.position = 'fixed';
@@ -68,3 +112,5 @@ closeIcon.addEventListener('click',()=>{
     enableScroll();  // Odblokuj
     
 })
+    
+    });
