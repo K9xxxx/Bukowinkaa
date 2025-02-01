@@ -31,8 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to(".atrakcje-description h2", {
       scrollTrigger: {
         trigger: ".atrakcje-description h2", 
-        start: "top 70%",
-        markers: true,
+        start: "top 70%"
       },
       opacity:1
     });
@@ -40,8 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to(".atrakcje-description article", {
       scrollTrigger: {
         trigger: ".atrakcje-description h2", 
-        start: "top 70%",
-        markers: true,
+        start: "top 70%"
       },
       opacity:1
     });

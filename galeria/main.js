@@ -23,8 +23,7 @@ $(document).ready(function(){
     gsap.to(".galeria-description h2", {
       scrollTrigger: {
         trigger: ".galeria-description h2", 
-        start: "top 70%",
-        markers: true,
+        start: "top 70%"
       },
       opacity:1
     });
@@ -32,8 +31,7 @@ $(document).ready(function(){
     gsap.to(".galeria-description article", {
       scrollTrigger: {
         trigger: ".galeria-description h2", 
-        start: "top 70%",
-        markers: true,
+        start: "top 70%"
       },
       opacity:1
     });

@@ -35,8 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to(".kontakt-description h2", {
       scrollTrigger: {
         trigger: ".kontakt-description h2", 
-        start: "top 70%",
-        markers: true,
+        start: "top 70%"
       },
       opacity:1
     });
@@ -44,8 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to(".kontakt-description article", {
       scrollTrigger: {
         trigger: ".kontakt-description h2", 
-        start: "top 70%",
-        markers: true,
+        start: "top 70%"
       },
       opacity:1
     });
@@ -53,16 +51,14 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to(".form-box", {
       scrollTrigger: {
         trigger: ".kontakt-info-flex", 
-        start: "top 80%",
-        markers: true,
+        start: "top 80%"
       },
       opacity:1       
     });
     gsap.to(".kontakt-info h2", {
       scrollTrigger: {
         trigger: ".kontakt-info-flex h2", 
-        start: "top 85%",
-        markers: true,
+        start: "top 85%"
       },
       opacity:1,
       y:0,
