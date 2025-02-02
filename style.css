@@ -718,6 +718,47 @@ footer{
 .footer-bot-credits a:hover{
     color:hsl(170, 53%, 37%);
 }
+.loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-Dark);
+    transition:opacity 0.75s, visibility 0.75s;
+}
+.loader-hidden{
+    opacity:0;
+    visibility:hidden;
+
+}
+.loader.loader::after{
+    content:"";
+    width:100px;
+    height:100px;
+    border:10px solid var(--light-Dark);
+    border-top-color:var(--secound);
+    border-radius:50%;
+    animation:pulse 0.75s ease infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+}
+
+.hidden {
+    display: none;
+}
 
 
 

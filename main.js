@@ -10,8 +10,9 @@ const atrakcje = document.querySelectorAll('.atrakcja');
 
 
 //content
-
-
+window.addEventListener("load", function() {
+    document.getElementById("loader").classList.add("hidden");
+});
 
 let scrollPosition = 0;
 document.addEventListener("DOMContentLoaded", () => {
