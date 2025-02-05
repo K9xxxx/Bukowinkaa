@@ -12,6 +12,7 @@ const atrakcje = document.querySelectorAll('.atrakcja');
 //content
 window.addEventListener("load", function() {
     document.getElementById("loader").classList.add("hidden");
+    document.querySelector(".full-content").classList.remove("hidden");
 });
 
 let scrollPosition = 0;
