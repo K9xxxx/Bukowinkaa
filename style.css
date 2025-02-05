@@ -166,6 +166,11 @@ header{
     min-height:fit-content;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity:0;
+    transition:opacity 0.5s ease-in-out;
+}
+header.loaded{
+    opacity:1;
 }
 .header-content{
     position:relative;

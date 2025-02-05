@@ -307,5 +307,6 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("load", function() {
     document.getElementById("loader").classList.add("hidden");
     document.querySelector(".full-content").classList.remove("hidden");
+    document.querySelector("header").classList.add("loaded");
 });
 
