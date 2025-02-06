@@ -412,14 +412,25 @@ header.loaded{
     font-size: 16px;
     font-weight:bold;
 }
-.paralax-2{
-    background: url('./img/paralax-2.jpg') no-repeat center center;
-    background-size: cover; 
+.paralax-2 {
+    position: relative;
     width: 100%;
     height: 400px;
-    background-attachment: fixed; 
-    background-position: center;
+    overflow: hidden; /* Zapobiega wychodzeniu obrazu poza kontener */
 }
+
+.paralax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px; /* Trochę większe niż rodzic dla lepszego efektu */
+    background: url('./img/paralax-2.jpg') no-repeat center center;
+    background-size: cover;
+    transform: translateY(0);
+    will-change: transform;
+}
+
 
 .spedzanie-czasu{
     border:4px solid var(--main-green);
@@ -1249,8 +1260,8 @@ footer{
     .paralax-2 {
         position: relative;
         width: 100%;
-        height: 300px;
-        overflow: hidden;
+        height: 400px;
+        overflow: hidden; /* Zapobiega wychodzeniu obrazu poza kontener */
     }
     
     .paralax-bg {
@@ -1258,11 +1269,13 @@ footer{
         top: 0;
         left: 0;
         width: 100%;
-        height: 120%; /* Trochę większe tło, by przesuwać je płynnie */
-        background: url('./img/paralax-2-small.jpg') no-repeat center center;
+        height: 500px; /* Trochę większe niż rodzic dla lepszego efektu */
+        background: url('./img/paralax-2.jpg') no-repeat center center;
         background-size: cover;
+        transform: translateY(0);
         will-change: transform;
     }
+    
     .spedzanie-czasu {
         border: 4px solid var(--main-green);
         width: 90%;

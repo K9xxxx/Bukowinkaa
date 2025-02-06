@@ -62,9 +62,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener("scroll", function () {
         let paralax = document.querySelector(".paralax-bg");
-        let scrolled = window.scrollY;
-        paralax.style.transform = `translateY(${scrolled * 0.3}px)`;
+        let paralaxContainer = document.querySelector(".paralax-2");
+        
+        let containerTop = paralaxContainer.offsetTop;
+        let scrollY = window.scrollY;
+        let speed = 0.3; // Możesz dostosować prędkość
+    
+        // Sprawdzamy, czy użytkownik przewija przez paralaksę
+        if (scrollY + window.innerHeight > containerTop && scrollY < containerTop + paralaxContainer.offsetHeight) {
+            let offset = (scrollY - containerTop) * speed;
+            paralax.style.transform = `translateY(${offset}px)`;
+        }
     });
+    
 
     gsap.registerPlugin(ScrollTrigger);
 
