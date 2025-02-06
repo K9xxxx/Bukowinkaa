@@ -1247,12 +1247,24 @@ footer{
     }
     
     .paralax-2 {
-        height: 300px;
         background: url('./img/paralax-2-small.jpg') no-repeat center center;
         background-size: cover; 
         width: 100%;
-        background-attachment: fixed; 
-        background-position: center; 
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .paralax-2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('./img/paralax-2-small.jpg') no-repeat center center;
+        background-size: cover;
+        will-change: transform;
     }
     .spedzanie-czasu {
         border: 4px solid var(--main-green);

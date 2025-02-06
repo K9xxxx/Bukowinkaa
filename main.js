@@ -60,7 +60,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     typeWriter(); // Rozpocznij animację
 
-
+    document.addEventListener("scroll", function () {
+        let paralax = document.querySelector(".paralax-2::before");
+        let scrolled = window.scrollY;
+        paralax.style.transform = `translateY(${scrolled * 0.3}px)`;
+    });
 
     gsap.registerPlugin(ScrollTrigger);
 
