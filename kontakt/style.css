@@ -153,7 +153,7 @@ nav.scrolled .nav-relative{
     color:hsl(0,0%,80%);
 }
 header{
-    background:url('../img/Kontakt-header.png');
+    background:url('../img/Kontakt-header.webp');
     width:100%;
     height:100vh;
     min-height:fit-content;
@@ -610,6 +610,42 @@ form input:focus ~ p{
 .button-wyslij:hover{
     background: linear-gradient(to right, #1E5F54, #1E5F54, #1E5F54);
     color:#dddddd;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loader::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0f2f2a;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+}
+.hidden {
+    display: none !important;
 }
 
 

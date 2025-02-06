@@ -10,7 +10,13 @@ const detailedDescriptionBoxArticle=document.querySelectorAll('.detailed-descrip
 const detailedDescriptionBoxImg=document.querySelectorAll('.detailed-description-box img')
 
 
-
+const bgImage = new Image();
+bgImage.src = "../img/Atrakcje-header.webp";
+bgImage.onload = function() {
+    document.getElementById("loader").classList.add("hidden");
+    document.querySelector(".full-content").classList.remove("hidden");
+    document.querySelector("header").classList.add("loaded");
+};
 let scrollPosition = 0;
 document.addEventListener("DOMContentLoaded", () => {
 
