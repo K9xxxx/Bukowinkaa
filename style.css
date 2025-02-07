@@ -316,6 +316,8 @@ header.loaded{
     flex-wrap: wrap;
     padding:60px 0%;
     justify-content: center;
+    max-width:1400px;
+    margin:0 auto;
 }
 .krotki-opis-domki-max div{
     width:45%;
