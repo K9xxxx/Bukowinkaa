@@ -1,1 +1,1 @@
-Sprawdź moje portfolio: [patrykjary.pl](https://patrykjary.pl/)  
+Chcesz stronę internetową widoczną w Google? Zajmuję się projektowaniem i optymalizacją stron www. Zobacz moje realizacje: patrykjary.pl
