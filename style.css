@@ -297,18 +297,54 @@ header.loaded{
     width:fit-content !important;
     display:block;
     margin:0 auto;
+    transition: all .3s ease-in-out;
+}
+.krotki-opis-o-nas a:hover{
+    width:fit-content !important;
+    display:block;
+    margin:0 auto;
+}
+.krotki-opis-o-nas a:hover>.bttn::after{
+    top:5px;
+    left:5px;
+    width: 100%;
+    height:100%;
+    opacity:1;
+}
+.krotki-opis-o-nas a:hover>.bttn{
+    background:var(--sec-green);
+    color:var(--main-white);
+    letter-spacing: 1px;
 }
 .krotki-opis-o-nas a div{
+    position:relative;
     border:1px solid black;
     padding:24px 64px;
     color:var(--full-black);
     width:fit-content;
     font-weight:bold;
+    background:var(--main-white);
+    transition:all .3s ease-in-out;
 }
-
+.krotki-opis-o-nas a .bttn::after{
+    position:absolute;
+    content:'';
+    top:0px;
+    left:0px;
+    width: 100%;
+    height:100%;
+    margin-top:0px;
+    margin-left:0px;
+    border:1px solid black;
+    z-index:-1;
+    transition:all .3s ease-in-out;
+    opacity:0;
+}
 .krotki-opis-domki{
     background-color: var(--main-green);
     padding-bottom:60px;
+    z-index:1;
+    position:relative;
 }
 .krotki-opis-domki-max{
     display:flex;
@@ -402,7 +438,9 @@ header.loaded{
     margin:0 auto;
     width:fit-content;
     display:block;
+    position:relative;
 }
+
 .krotki-opis-domki div a div{
     padding:24px 48px;
     border:1px solid white;
@@ -413,7 +451,33 @@ header.loaded{
     letter-spacing:1px;
     font-size: 16px;
     font-weight:bold;
+    position:relative;
+    transition:all .3s ease-in-out;
+    background: var(--main-green);
 }
+.krotki-opis-domki div a div::after{
+    position:absolute;
+    content:'';
+    border:1px solid var(--main-white);
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0;
+    transition:all .3s ease-in-out;
+}
+.krotki-opis-domki div a:hover>div{
+    background: var(--main-white);
+    color:var(--full-black);
+    letter-spacing: 1px;
+}
+.krotki-opis-domki div a:hover>div::after{
+    top:5px;
+    left:5px;
+    opacity:1;
+}
+
 .paralax-2 {
     position: relative;
     width: 100%;
@@ -483,14 +547,40 @@ header.loaded{
     width:fit-content;
     margin:0 auto 32px;
 }
+.spedzanie-czasu a:hover>div::after{
+    top:5px;
+    left:5px;
+    opacity:1;
+}
+.spedzanie-czasu a:hover>div{
+    background:var(--main-green);
+    color:var(--main-white);
+    letter-spacing: 1px;
+}
 
 .spedzanie-czasu a div{
     color:var(--main-green);
     font-size:16px;
-    border:2px solid var(--main-green);
+    border:1px solid var(--main-green);
     padding:16px 32px;
     text-align: center;
     font-weight:bold;
+    position:relative;
+    transition:all .3s ease-in-out;
+    background:var(--main-white);
+}
+.spedzanie-czasu a div::after{
+    position:absolute;
+    content:'';
+    top:0px;
+    left:0px;
+    width: 100%;
+    height:100%;
+    border:1px solid black;
+    z-index:-1;
+    transition:all .3s ease-in-out;
+    opacity:0;
+
 }
 
 .mazury{
@@ -986,6 +1076,16 @@ footer{
 }
 
 @media only screen and (max-width:850px){
+    .krotki-opis-o-nas a div {
+    position: relative;
+    border: 1px solid black;
+    padding: 24px 64px;
+    color: var(--full-black);
+    width: fit-content;
+    font-weight: bold;
+    background:transparent;
+    transition: all .3s ease-in-out;
+}
     .nav-relative{
         display:none;
     }
@@ -1065,8 +1165,9 @@ footer{
     .mob-navigation-content{
         display:flex;
         flex-direction:column;
-        padding-top:60px;
-        padding-bottom:0px;
+        justify-content: space-around;
+        align-items: center;
+        min-height:100%;
     }
     .mob-navigation-anchors{
         display:flex;
